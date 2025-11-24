@@ -148,14 +148,8 @@ function openModal(videoId) {
   if (!video) return;
 
   const modal = document.getElementById('videoModal');
-  const modalTitle = document.getElementById('modalTitle');
-  const modalInfo = document.getElementById('modalInfo');
-  const modalDescription = document.getElementById('modalDescription');
   const modalIframe = document.getElementById('modalIframe');
 
-  modalTitle.textContent = video.title;
-  modalInfo.innerHTML = '';
-  modalDescription.innerHTML = '';
   modalIframe.src = `${video.videoUrl}?autoplay=1`;
 
   modal.classList.add('active');
