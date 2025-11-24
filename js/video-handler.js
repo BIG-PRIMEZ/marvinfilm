@@ -5,15 +5,7 @@ const portfolioVideos = [
     thumbnail: "https://vumbnail.com/1140013171.jpg",
     videoUrl: "https://player.vimeo.com/video/1140013171",
     category: "wedding",
-    featured: true,
-    description: "A beautiful wedding celebration captured with cinematic storytelling. Every moment preserved with artistic precision and emotional depth.",
-    couple: "Katherine & Osagu",
-    venue: "Beautiful Venue",
-    location: "Nigeria",
-    year: "2024",
-    camera: "Professional Cinema Camera",
-    lens: "Cinema Lenses",
-    format: "4K"
+    featured: true
   },
   {
     id: 2,
@@ -21,15 +13,7 @@ const portfolioVideos = [
     thumbnail: "https://vumbnail.com/1140018502.jpg",
     videoUrl: "https://player.vimeo.com/video/1140018502",
     category: "wedding",
-    featured: true,
-    description: "A beautiful wedding celebration captured with cinematic storytelling. Every moment preserved with artistic precision and emotional depth.",
-    couple: "Elizabth & Efosa",
-    venue: "Beautiful Venue",
-    location: "Nigeria",
-    year: "2024",
-    camera: "Professional Cinema Camera",
-    lens: "Cinema Lenses",
-    format: "4K"
+    featured: true
   },
   {
     id: 3,
@@ -37,15 +21,7 @@ const portfolioVideos = [
     thumbnail: "https://vumbnail.com/1140021816.jpg",
     videoUrl: "https://player.vimeo.com/video/1140021816",
     category: "wedding",
-    featured: true,
-    description: "A beautiful wedding celebration captured with cinematic storytelling. Every moment preserved with artistic precision and emotional depth.",
-    couple: "Sandra & Sesan",
-    venue: "Beautiful Venue",
-    location: "Nigeria",
-    year: "2024",
-    camera: "Professional Cinema Camera",
-    lens: "Cinema Lenses",
-    format: "4K"
+    featured: true
   },
   {
     id: 4,
@@ -53,15 +29,7 @@ const portfolioVideos = [
     thumbnail: "https://vumbnail.com/1140024672.jpg",
     videoUrl: "https://player.vimeo.com/video/1140024672",
     category: "wedding",
-    featured: false,
-    description: "A beautiful wedding celebration captured with cinematic storytelling. Every moment preserved with artistic precision and emotional depth.",
-    couple: "Tejiri & Sodie",
-    venue: "Beautiful Venue",
-    location: "Nigeria",
-    year: "2024",
-    camera: "Professional Cinema Camera",
-    lens: "Cinema Lenses",
-    format: "4K"
+    featured: false
   },
   {
     id: 5,
@@ -69,15 +37,7 @@ const portfolioVideos = [
     thumbnail: "https://vumbnail.com/1140027606.jpg",
     videoUrl: "https://player.vimeo.com/video/1140027606",
     category: "wedding",
-    featured: false,
-    description: "A beautiful wedding celebration captured with cinematic storytelling. Every moment preserved with artistic precision and emotional depth.",
-    couple: "Iyobosa & David",
-    venue: "Beautiful Venue",
-    location: "Nigeria",
-    year: "2024",
-    camera: "Professional Cinema Camera",
-    lens: "Cinema Lenses",
-    format: "4K"
+    featured: false
   },
   {
     id: 6,
@@ -85,15 +45,7 @@ const portfolioVideos = [
     thumbnail: "https://vumbnail.com/1140029152.jpg",
     videoUrl: "https://player.vimeo.com/video/1140029152",
     category: "wedding",
-    featured: false,
-    description: "A beautiful wedding celebration captured with cinematic storytelling. Every moment preserved with artistic precision and emotional depth.",
-    couple: "Beautiful Couple",
-    venue: "Beautiful Venue",
-    location: "Nigeria",
-    year: "2024",
-    camera: "Professional Cinema Camera",
-    lens: "Cinema Lenses",
-    format: "4K"
+    featured: false
   },
   {
     id: 7,
@@ -101,15 +53,7 @@ const portfolioVideos = [
     thumbnail: "https://vumbnail.com/1140031965.jpg",
     videoUrl: "https://player.vimeo.com/video/1140031965",
     category: "wedding",
-    featured: false,
-    description: "A beautiful wedding celebration captured with cinematic storytelling. Every moment preserved with artistic precision and emotional depth.",
-    couple: "Bisola & Nosa",
-    venue: "Beautiful Venue",
-    location: "Nigeria",
-    year: "2024",
-    camera: "Professional Cinema Camera",
-    lens: "Cinema Lenses",
-    format: "4K"
+    featured: false
   },
   {
     id: 8,
@@ -117,15 +61,7 @@ const portfolioVideos = [
     thumbnail: "https://vumbnail.com/1140033704.jpg",
     videoUrl: "https://player.vimeo.com/video/1140033704",
     category: "wedding",
-    featured: false,
-    description: "A beautiful wedding celebration captured with cinematic storytelling. Every moment preserved with artistic precision and emotional depth.",
-    couple: "Ann",
-    venue: "Beautiful Venue",
-    location: "Nigeria",
-    year: "2024",
-    camera: "Professional Cinema Camera",
-    lens: "Cinema Lenses",
-    format: "4K"
+    featured: false
   }
 ];
 
@@ -218,19 +154,8 @@ function openModal(videoId) {
   const modalIframe = document.getElementById('modalIframe');
 
   modalTitle.textContent = video.title;
-  modalInfo.innerHTML = `
-    <span>Venue: ${video.venue}</span>
-    <span>Location: ${video.location}</span>
-    <span>Year: ${video.year}</span>
-  `;
-  modalDescription.innerHTML = `
-    <p>${video.description}</p>
-    <div class="modal-tech-specs">
-      <div class="tech-spec"><span class="tech-label">Camera</span><span class="tech-value">${video.camera}</span></div>
-      <div class="tech-spec"><span class="tech-label">Lens</span><span class="tech-value">${video.lens}</span></div>
-      <div class="tech-spec"><span class="tech-label">Format</span><span class="tech-value">${video.format}</span></div>
-    </div>
-  `;
+  modalInfo.innerHTML = '';
+  modalDescription.innerHTML = '';
   modalIframe.src = `${video.videoUrl}?autoplay=1`;
 
   modal.classList.add('active');
