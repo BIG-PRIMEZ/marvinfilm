@@ -1,0 +1,247 @@
+.about-hero {
+  padding: calc(var(--nav-height) + var(--spacing-xl)) 0 var(--spacing-lg);
+  text-align: center;
+  background: var(--gradient-primary);
+  position: relative;
+}
+
+.about-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 1px;
+  background: var(--gradient-accent);
+}
+
+.about-hero h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-weight: 400;
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.about-hero p {
+  font-family: var(--font-subheading);
+  font-size: 1rem;
+  color: var(--color-light-grey);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.about-image-container {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4/5;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-image-container::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: 10px;
+  bottom: 10px;
+  border: 2px solid var(--color-accent);
+  border-radius: var(--radius-lg);
+  z-index: -1;
+}
+
+.about-text h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 400;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.about-text p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-light-grey);
+  margin-bottom: var(--spacing-sm);
+}
+
+.story-section {
+  background: var(--color-dark-grey);
+  padding: var(--spacing-xl) 0;
+  margin: var(--spacing-xl) 0;
+}
+
+.story-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.story-section h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 400;
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.story-section p {
+  font-family: var(--font-body);
+  color: var(--color-light-grey);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+}
+
+.pullquote {
+  font-family: var(--font-subheading);
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-white);
+  padding: var(--spacing-lg);
+  border-left: 3px solid var(--color-accent);
+  margin: var(--spacing-lg) 0;
+  background: var(--color-medium-grey);
+  border-radius: 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.skill-card {
+  background: var(--color-dark-grey);
+  padding: var(--spacing-md);
+  border-radius: 0;
+  transition: all var(--transition-normal);
+  border: 1px solid var(--color-medium-grey);
+  position: relative;
+}
+
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transition: transform var(--transition-normal);
+}
+
+.skill-card:hover::before {
+  transform: scaleX(1);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-gold);
+}
+
+.skill-icon {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.skill-name {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: var(--spacing-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.skill-description {
+  font-family: var(--font-body);
+  color: var(--color-light-grey);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.philosophy-section {
+  text-align: center;
+  padding: var(--spacing-xl) 0;
+  background: var(--gradient-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.philosophy-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(128, 128, 128, 0.05) 0%, transparent 70%);
+}
+
+.philosophy-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.philosophy-quote {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: var(--spacing-md);
+}
+
+.philosophy-author {
+  font-size: 1.2rem;
+  color: var(--color-light-grey);
+}
+
+@media (max-width: 968px) {
+  .about-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pullquote {
+    font-size: 1.3rem;
+    padding: var(--spacing-md);
+  }
+}

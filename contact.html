@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | marvinfilm</title>
+  <meta name="description" content="Get in touch with marvinfilm for your wedding cinematography">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+  <link rel="apple-touch-icon" href="images/logo.jpg">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main>
+    <section class="contact-hero">
+      <div class="container">
+        <h1 class="fade-in-down"><span class="gradient-text">Let's Talk</span></h1>
+        <p class="fade-in-up stagger-2">Tell us about your wedding day vision</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-container">
+          <div class="contact-form-wrapper reveal">
+            <form class="contact-form" id="contactForm">
+              <h2>Tell Us About Your Day</h2>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Names *</label>
+                  <input type="text" id="name" name="name" required placeholder="e.g., Sarah & Michael">
+                  <span class="error-message">Please enter your names</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" required placeholder="your@email.com">
+                  <span class="error-message">Please enter a valid email</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                </div>
+
+                <div class="form-group">
+                  <label for="weddingDate">Wedding Date *</label>
+                  <input type="date" id="weddingDate" name="weddingDate" required>
+                  <span class="error-message">Please enter your wedding date</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="venue">Venue/Location *</label>
+                  <input type="text" id="venue" name="venue" required placeholder="e.g., Napa Valley, CA">
+                  <span class="error-message">Please enter venue or location</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="guestCount">Guest Count</label>
+                  <select id="guestCount" name="guestCount">
+                    <option value="">Select guest count</option>
+                    <option value="intimate">Intimate (Under 50)</option>
+                    <option value="small">Small (50-100)</option>
+                    <option value="medium">Medium (100-200)</option>
+                    <option value="large">Large (200+)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="package">Package Interest</label>
+                <select id="package" name="package">
+                  <option value="">Select a package</option>
+                  <option value="highlight">Highlight Reel (3-5 min)</option>
+                  <option value="feature">Full Feature Film (20-30 min)</option>
+                  <option value="complete">Complete Coverage (Both)</option>
+                  <option value="custom">Custom Package</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Vision *</label>
+                <textarea id="message" name="message" required placeholder="Tell us about your love story, wedding style, specific moments you want captured, and any special details..." maxlength="1000"></textarea>
+                <div class="char-counter"><span id="charCount">0</span>/1000</div>
+                <span class="error-message">Please tell us about your vision</span>
+              </div>
+
+              <button type="submit" class="submit-btn">Send Inquiry</button>
+            </form>
+          </div>
+
+          <div class="contact-info reveal">
+            <div class="contact-info-header">
+              <h3>Get In Touch</h3>
+              <p>We'd love to hear about your wedding day. Let's create something beautiful together.</p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">📧</div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p><a href="mailto:marvinfilm04@gmail.com">marvinfilm04@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">📱</div>
+              <div class="contact-details">
+                <h4>Phone</h4>
+                <p><a href="tel:+2347035224845">+234 703 522 4845</a></p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>Km2 Refinery Road Behind Sunsel Plaza Effurun Delta State <br>Available for travel worldwide</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon-social">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </div>
+              <div class="contact-details">
+                <h4>Follow Our Work</h4>
+                <div class="social-links-contact">
+                  <a href="https://www.instagram.com/marvinfilm" class="social-link" aria-label="Instagram" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                  </a>
+                  <a href="https://www.tiktok.com/@marvinfilm" class="social-link" aria-label="TikTok" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+                  </a>
+                  <a href="https://www.youtube.com/@marvinfilm04" class="social-link" aria-label="YouTube">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast">
+    <span class="toast-icon" id="toastIcon"></span>
+    <span class="toast-message" id="toastMessage"></span>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/includes.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/form-validation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

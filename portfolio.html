@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Films | marvinfilm</title>
+  <meta name="description" content="Explore marvinfilm's portfolio of cinematic wedding films">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+  <link rel="apple-touch-icon" href="images/logo.jpg">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main>
+    <section class="portfolio-hero">
+      <div class="hero-background"></div>
+      <div class="container">
+        <div class="hero-content fade-in-down">
+          <span class="hero-eyebrow">Wedding Cinematography</span>
+          <h1 class="hero-title">Love Stories</h1>
+          <p class="hero-description">Every wedding is unique. We craft timeless films that capture the essence, emotion, and beauty of your most cherished day.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-section">
+      <div class="container">
+        <div class="portfolio-header reveal">
+          <div class="header-text">
+            <h2 class="portfolio-section-title">Featured Wedding Films</h2>
+            <p class="portfolio-section-description">From intimate ceremonies to grand celebrations, each film tells a unique love story with cinematic artistry.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid">
+        </div>
+      </div>
+    </section>
+
+    <section class="wedding-services-section">
+      <div class="container">
+        <div class="services-intro reveal">
+          <span class="section-eyebrow">Our Approach</span>
+          <h2 class="section-title">More Than Just a Video</h2>
+          <p class="section-description">We believe your wedding film should be a work of art—something you'll treasure for generations. Our cinematic approach combines documentary-style storytelling with stunning visuals to create films that feel authentic, emotional, and timeless.</p>
+        </div>
+
+        <div class="wedding-services-grid">
+          <div class="service-item reveal stagger-1">
+            <div class="service-number">01</div>
+            <h3 class="service-name">Full Day Coverage</h3>
+            <p class="service-desc">From getting ready to the last dance, we capture every precious moment of your celebration.</p>
+          </div>
+          <div class="service-item reveal stagger-2">
+            <div class="service-number">02</div>
+            <h3 class="service-name">Cinematic Editing</h3>
+            <p class="service-desc">Professional color grading, music selection, and pacing that brings your story to life.</p>
+          </div>
+          <div class="service-item reveal stagger-3">
+            <div class="service-number">03</div>
+            <h3 class="service-name">Highlight Reel</h3>
+            <p class="service-desc">A beautifully crafted 3-5 minute film perfect for sharing with friends and family.</p>
+          </div>
+          <div class="service-item reveal stagger-4">
+            <div class="service-number">04</div>
+            <h3 class="service-name">Full Feature Film</h3>
+            <p class="service-desc">An extended edit capturing the complete narrative of your wedding day, from start to finish.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="videoModal">
+    <div class="modal-content">
+      <div class="modal-video">
+        <iframe id="modalIframe" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+      <div class="modal-details">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <button class="modal-close" id="modalClose">&times;</button>
+        </div>
+        <div class="modal-info" id="modalInfo"></div>
+        <p class="modal-description" id="modalDescription"></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/includes.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/video-handler.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

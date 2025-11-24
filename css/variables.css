@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600&family=Inter:wght@300;400;500&family=Spectral:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  /* Minimalist black and grey palette */
+  --color-black: #000000;
+  --color-dark-grey: #1a1a1a;
+  --color-medium-grey: #2a2a2a;
+  --color-grey: #808080;
+  --color-light-grey: #a0a0a0;
+  --color-off-white: #e0e0e0;
+  --color-white: #ffffff;
+
+  /* Accent is now grey */
+  --color-accent: #808080;
+  --color-accent-light: #a0a0a0;
+  --color-accent-dark: #606060;
+
+  /* Greyscale gradients */
+  --gradient-primary: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);
+  --gradient-accent: linear-gradient(135deg, #808080 0%, #a0a0a0 100%);
+  --gradient-text: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+  --gradient-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9));
+  --gradient-hero: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.95) 100%);
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+  --spacing-2xl: 8rem;
+
+  /* Typography */
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-subheading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-hero: 'Spectral', serif;
+
+  /* Effects - greyscale shadows */
+  --blur-amount: 16px;
+  --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-hard: 0 4px 16px rgba(0, 0, 0, 0.7);
+  --shadow-glow: 0 0 40px rgba(128, 128, 128, 0.3);
+  --shadow-accent: 0 4px 20px rgba(128, 128, 128, 0.4);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Layout */
+  --max-width: 1400px;
+  --nav-height: 90px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--color-grey);
+  color: var(--color-white);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
